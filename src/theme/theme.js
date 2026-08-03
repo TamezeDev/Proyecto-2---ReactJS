@@ -3,8 +3,12 @@ import { createSystem, defineConfig, defaultConfig } from '@chakra-ui/react'
 const customConfig = defineConfig({
   globalCss: {
     body: {
-      backgroundColor: 'green.300',
+      backgroundColor: 'green.100',
       minHeight: '100vh',
+      width: '100vW',
+    },
+    ul: {
+      listStyle: 'none',
     },
   },
   theme: {
