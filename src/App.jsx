@@ -14,7 +14,9 @@ function App() {
         margin={'0 auto'}
       >
         <Header />
-        <Routing />
+        <main>
+          <Routing />
+        </main>
         <Footer />
       </Flex>
     </BrowserRouter>

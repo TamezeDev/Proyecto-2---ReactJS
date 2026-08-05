@@ -8,7 +8,7 @@ const Header = () => {
       as={'header'}
       flexDirection={{ base: 'column', sm: 'row' }}
       justifyContent={'center'}
-      gap={'10vw'}
+      gap={'5vw'}
       margin={{ base: '20px', sm: '40px' }}
     >
       <Brand />

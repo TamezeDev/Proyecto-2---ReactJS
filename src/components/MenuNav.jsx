@@ -19,7 +19,13 @@ const MenuNav = () => {
       borderRadius="md"
       padding={{ base: '5px', sm: '15px', md: '20px' }}
     >
-      <Flex as="ul" justifyContent="center" wrap="wrap" gap="30px">
+      <Flex
+        as="ul"
+        justifyContent="center"
+        wrap="wrap"
+        gap="30px"
+        padding="10px"
+      >
         {navOptions.map((option, index) => (
           <Flex
             as="li"

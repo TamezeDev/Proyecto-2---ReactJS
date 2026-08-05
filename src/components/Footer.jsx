@@ -13,6 +13,8 @@ const Footer = () => {
       color="white"
       padding={{ base: '20px', md: '30px' }}
       gap={{ base: '15px', md: '30px' }}
+      mb={5}
+      borderRadius={'md'}
     >
       <Text>🌴 Los voluntarios 🌴</Text>
       <HStack spacing={4}>

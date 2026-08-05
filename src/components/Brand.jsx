@@ -19,16 +19,16 @@ const Brand = () => {
         alignItems="center"
         gap={{ base: '10px', md: '20px' }}
       >
-        <Text fontSize={{ base: 'xl', md: '4xl' }}>{logo}</Text>
+        <Text fontSize={{ base: '2xl', md: '4xl' }}>{logo}</Text>
         <Heading
           textAlign="center"
-          size={{ base: '2xl', sm: '3xl', md: '5xl' }}
+          size={{ base: '3xl', sm: '4xl', md: '5xl' }}
           color="green.700"
           fontFamily="heading"
         >
           {brandName}
         </Heading>
-        <Text fontSize={{ base: 'xl', md: '4xl' }}>{logo}</Text>
+        <Text fontSize={{ base: '2xl', md: '4xl' }}>{logo}</Text>
       </Flex>
       <Text
         fontSize={{ base: 'sm', md: 'xl' }}
