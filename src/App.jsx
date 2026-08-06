@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Routing from './routing/Routing'
 import { BrowserRouter } from 'react-router-dom'
 import Footer from './components/Footer'
+import TeamContextProvider from './components/context/TeamContextProvider'
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
         margin={'0 auto'}
       >
         <Header />
-        <main>
-          <Routing />
-        </main>
+        <TeamContextProvider>
+          <main>
+            <Routing />
+          </main>
+        </TeamContextProvider>
         <Footer />
       </Flex>
     </BrowserRouter>

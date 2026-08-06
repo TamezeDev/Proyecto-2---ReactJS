@@ -55,7 +55,7 @@ const DetailArticle = () => {
         const order = isEven ? 'row' : 'row-reverse'
         if (!pair.image) {
           return (
-            <Text fontSize="lg" color="gray.700">
+            <Text key={index} fontSize="lg" color="gray.700">
               {pair.text}
             </Text>
           )

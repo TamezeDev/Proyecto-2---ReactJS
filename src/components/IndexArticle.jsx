@@ -23,7 +23,12 @@ const IndexArticle = ({ article }) => {
           height="200px"
           objectFit="cover"
         />
-        <Box spaceY="20px" margin="10px">
+        <Box
+          spaceY="20px"
+          margin="10px"
+          minHeight={'200px'}
+          maxHeight={'200px'}
+        >
           <Heading fontSize="md" color="green.700" textAlign="center">
             {article.headline}
           </Heading>
