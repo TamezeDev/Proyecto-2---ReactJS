@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { v4 as uuid } from 'uuid'
 
 const getRandomPerson = async () => {
   const data = await fetch('https://randomuser.me/api/')
@@ -36,7 +37,10 @@ export const useTeam = () => {
     }
   }
 
-  const addnewMember = (newMember) => setTeam((prev) => [newMember, ...prev])
+  const addnewMember = (newMember) => {
+    newMember.id = uuid()
+    setTeam((prev) => [newMember, ...prev])
+  }
 
   return { team, isLoading, loadTeam, addnewMember }
 }
