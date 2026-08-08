@@ -14,7 +14,7 @@ const Team = () => {
 
   useEffect(() => {
     loadTeam(12)
-  }, [])
+  }, [loadTeam])
 
   if (isLoading)
     return (

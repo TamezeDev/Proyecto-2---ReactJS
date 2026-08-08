@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useCallback } from 'react'
 import { v4 as uuid } from 'uuid'
 
 const getRandomPerson = async () => {
@@ -20,7 +20,7 @@ export const useTeam = () => {
   const [isLoading, setIsLoading] = useState(false)
   const hasUsedApi = useRef(false)
 
-  const loadTeam = async (howMany) => {
+  const loadTeam = useCallback(async (howMany) => {
     if (hasUsedApi.current) return
     hasUsedApi.current = true
 
@@ -35,7 +35,7 @@ export const useTeam = () => {
     } catch (err) {
       console.log(err)
     }
-  }
+  }, [])
 
   const addnewMember = (newMember) => {
     newMember.id = uuid()
