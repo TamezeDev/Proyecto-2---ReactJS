@@ -46,7 +46,7 @@ const DetailArticle = () => {
         {article.headline}
       </Text>
       <Text color="gray.500">{article.date}</Text>
-      <Text fontSize="lg" color="green.700">
+      <Text fontSize="xl" color="green.700">
         {article.summary}
       </Text>
 
