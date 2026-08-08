@@ -10,6 +10,7 @@ const DetailMember = ({ member }) => {
       borderRadius="lg"
       boxShadow="md"
       p={4}
+      textAlign={'center'}
     >
       <Image
         src={member.img}
