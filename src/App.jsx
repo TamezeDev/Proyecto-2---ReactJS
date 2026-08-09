@@ -4,6 +4,7 @@ import Routing from './routing/Routing'
 import { BrowserRouter } from 'react-router-dom'
 import Footer from './components/Footer'
 import TeamContextProvider from './components/context/TeamContextProvider'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       >
         <Header />
         <TeamContextProvider>
+          <ScrollToTop />
           <main>
             <Routing />
           </main>
